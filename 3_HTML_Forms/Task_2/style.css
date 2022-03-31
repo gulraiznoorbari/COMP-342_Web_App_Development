@@ -1,0 +1,16 @@
+body {
+    background-color: #1bb1ec;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+fieldset {
+    background-color: #dde1e7;
+}
