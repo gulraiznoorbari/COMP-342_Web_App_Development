@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Task #1</title>
+</head>
+
+<body id="text">
+  a. <input type="text" id="value1">
+  <br>
+  b. <input type="text" id="value2">
+  <br>
+  <button onclick="calculate()">Calculate</button>
+  <p>Sum: <span id="sum"></span></p>
+  <p>Product: <span id="product"></span></p>
+  <p>Subtraction: <span id="subtraction"></span></p>
+  <p>Division: <span id="division"></span></p>
+  
+  
+  <script language="javascript">
+    var element = document.getElementById("text");
+    element.style.fontWeight = "bold";
+  
+    function sum(){
+      var a = parseInt(document.getElementById("value1").value);
+      var b = parseInt(document.getElementById("value2").value);
+      var sum = a + b;
+      return sum;
+    }
+    
+    function product(){
+      var a = parseInt(document.getElementById("value1").value);
+      var b = parseInt(document.getElementById("value2").value);
+      var sum = a * b;
+      return sum;
+    }
+    
+    function division(){
+      var a = parseInt(document.getElementById("value1").value);
+      var b = parseInt(document.getElementById("value2").value);
+      var sum = a / b;
+      return sum;
+    }
+    
+    function subtraction(){
+      var a = parseInt(document.getElementById("value1").value);
+      var b = parseInt(document.getElementById("value2").value);
+      var sum = a - b;
+      return sum;
+    }
+    
+    function calculate(){
+      document.getElementById("sum").innerHTML = sum();
+      document.getElementById("product").innerHTML = product();
+      document.getElementById("subtraction").innerHTML = subtraction();
+      document.getElementById("division").innerHTML = division();
+    }
+  </script>
+</body>
+
+</html>

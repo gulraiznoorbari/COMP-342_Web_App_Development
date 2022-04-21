@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Task #3</title>
+</head>
+
+<body>
+  a. <input type="text" id="a">
+  <br>
+  b. <input type="text" id="b">
+  <br>
+  c. <input type="text" id="c">
+  <br>
+  d. <input type="text" id="d">
+  <br>
+  e. <input type="text" id="e">
+  <br>
+  <button onclick="calculate()">Click Me</button>
+  <br>
+  <h3>Min: <span id="min"></span></h3>
+  <h3>Max: <span id="max"></span></h3>
+  <h3>Random: <span id="random"></span></h3>
+  
+  <script>
+    function findMin(){
+      var a = parseInt(document.getElementById("a").value);
+      var b = parseInt(document.getElementById("b").value);
+      var c = parseInt(document.getElementById("c").value);
+      var d = parseInt(document.getElementById("d").value);
+      var e = parseInt(document.getElementById("e").value);
+      var min = Math.min(a, b, c, d, e);
+      return min;
+    }
+    
+    function findMax(){
+      var a = parseInt(document.getElementById("a").value);
+      var b = parseInt(document.getElementById("b").value);
+      var c = parseInt(document.getElementById("c").value);
+      var d = parseInt(document.getElementById("d").value);
+      var e = parseInt(document.getElementById("e").value);
+      var max = Math.max(a, b, c, d, e);
+      return max;
+    }
+    
+    function findRandom() {
+      var a = parseInt(document.getElementById("a").value);
+      var b = parseInt(document.getElementById("b").value);
+      var c = parseInt(document.getElementById("c").value);
+      var d = parseInt(document.getElementById("d").value);
+      var e = parseInt(document.getElementById("e").value);
+      var list = [a, b, c, d, e];
+      return list[Math.floor((Math.random()*list.length))];
+    }
+    
+    function calculate(){
+      document.getElementById("min").innerHTML = findMin();
+      document.getElementById("max").innerHTML = findMax();
+      document.getElementById("random").innerHTML = findRandom();
+    }
+  </script>
+</body>
+
+</html>

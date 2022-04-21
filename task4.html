@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Task #4</title>
+</head>
+<body>
+  
+  <div id="text">
+  </div>
+  
+  <script>
+  
+    var simpleString1 = "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    
+    var formattedString1 = " Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.";
+    
+    var simpleString2 = " It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially"; 
+    var word1 = "unchanged.";
+    var w1 = word1.bold().toUpperCase();
+    
+    var simpleString3 = " It was popularised in the";
+    var word2 = " 1960s ";
+    var w2 = word2.bold();
+    
+    var simpleString4 = "with the release of "
+    var word3 = " letraset ";
+    var w3 = word3.bold().toUpperCase();
+    
+    var simpleString5 = "sheets containing Lorem Ipsum passages, and ";
+    var word4 = " more recently with desktop";
+    var w4 = word4.strike();
+    var simpleString6 = "publishing software like Aldus";
+    var word5 = "PageMaker";
+    var w5 = word5.link("https://www.google.com");
+    
+    var simpleString7 = "including versions of" 
+    var word6 = " Lorem Ipsum";
+    var w6 = word6.italics().fontsize("6px");
+
+    document.write(simpleString1 + formattedString1.bold().fontsize("6px") + simpleString2 + " " + w1 + simpleString3 + w2 + simpleString4 + w3 + simpleString5 + w4 + " " + simpleString6 + " " + w5 + " " + simpleString7 + w6 + ".");
+  </script>
+</body>
+</html>
